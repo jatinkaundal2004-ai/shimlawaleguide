@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shimla Wala Guide</title>
+
+<style>
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* HEADER */
+header{
+    background:#0b2c4d;
+    color:white;
+    padding:10px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:14px;
+}
+
+header .logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+header .logo img{
+    height:50px;
+    width:auto;
+    border-radius:8px;
+    object-fit:contain;
+}
+
+header .logo h1{
+    margin:0;
+    font-size:22px;
+}
+
+header .contact-info{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:4px;
+}
+
+/* HERO SECTION */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1641735735000-c9719ac2740b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0") center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:16px;
+    max-width:600px;
+}
+
+/* ENQUIRY FORM */
+.form-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-top:30px;
+    width:90%;
+    max-width:500px;
+}
+
+.form-box input{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.form-box button{
+    width:100%;
+    padding:10px;
+    background:#0b2c4d;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.form-box button:hover{
+    background:#143d66;
+}
+
+/* CONTENT SECTION */
+.section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.section h2{
+    color:#0b2c4d;
+    margin-bottom:15px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px auto;
+    max-width:700px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* DESTINATIONS */
+.destinations{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+.place{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.place h3{
+    color:#0b2c4d;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <img src="swgg.jpeg" alt="Shimla Wala Guide logo">
+        <h1>Shimla Wala Guide</h1>
+    </div>
+    <div class="contact-info">
+        <div>📞 9816566246, 7807957940</div>
+        <div>✉ info@smarttourism.com</div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Shimla Wala Guide</h1>
+    <p>Get personalized suggestions and explore the best tourist places of Shimla.</p>
+
+    <!-- ENQUIRY FORM (Submit links to places.html) -->
+    <form class="form-box" action="places.html" method="get">
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Phone No" required>
+        <input type="email" placeholder="Email ID" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section">
+    <h2>Make Your Trip Amazing</h2>
+    <div class="card">
+        <p>
+            Shimla Wala Guide is a digital platform that provides complete
+            information about tourist places, helping users plan trips easily.
+            It offers details about famous places, hotels, and travel information
+            through a user-friendly interface.
+        </p>
+    </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section">
+    <h2>Most Popular Travel Destinations</h2>
+
+    <div class="destinations">
+        <div class="place">
+            <h3>📍 Ridge</h3>
+            <p>Shimla's vibrant, historic mountain heart.</p>
+        </div>
+
+        <div class="place">
+            <h3>📍 Kufri</h3>
+            <p>Snowy slopes and mountain thrills.</p>
+        </div>
+
+        <div class="place">
+            <h3>📍 Jakhu</h3>
+            <p>Sacred peaks and towering heights.</p>
+        </div>
+
+        <div class="place">
+            <h3>📍 Mashobra</h3>
+            <p>Serene woods and whispering pines.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

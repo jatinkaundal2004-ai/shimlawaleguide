@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shimla Places | Shimla Wala Guide</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* HEADER */
+header{
+    background:#0b2c4d;
+    color:white;
+    padding:15px 20px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:26px;
+}
+
+/* INTRO SECTION */
+.intro{
+    max-width:900px;
+    margin:25px auto 10px;
+    background:white;
+    padding:20px 25px;
+    border-radius:12px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+.intro h2{
+    margin-top:0;
+    color:#0b2c4d;
+    font-size:24px;
+}
+
+.intro p{
+    line-height:1.7;
+    color:#333;
+    font-size:16px;
+}
+
+/* PLACES CONTAINER */
+.places-container{
+    max-width:900px;
+    margin:30px auto;
+    padding:10px;
+}
+
+/* PLACE CARD */
+.place-card{
+    position:relative;
+    margin-bottom:25px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.place-card img{
+    width:100%;
+    height:320px;
+    object-fit:contain;
+    background:#111; /* optional: fills empty space */
+    display:block;
+}
+
+/* OVERLAY */
+.place-name{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    font-weight:bold;
+    opacity:0;
+    transition:0.4s ease;
+}
+
+/* SHOW NAME ON HOVER */
+.place-card:hover .place-name{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Famous Places in Shimla</h1>
+</header>
+
+<!-- INTRODUCTION -->
+<div class="intro">
+    <h2>About Shimla</h2>
+    <p>
+        Shimla, the capital of Himachal Pradesh, is one of India’s most popular hill
+        stations. Known as the “Queen of Hills,” Shimla is famous for its pleasant
+        climate, colonial architecture, scenic mountain views, and lush green valleys.
+        Once the summer capital of British India, the city still reflects its rich
+        heritage through landmarks like Christ Church, Viceregal Lodge, and Mall Road.
+        Shimla is a perfect destination for nature lovers, adventure seekers, and
+        travelers looking for peace and beauty.
+    </p>
+</div>
+
+<!-- PLACES -->
+<div class="places-container">
+
+    <div class="place-card">
+        <img src="ridge.jpg" alt="Ridge">
+        <div class="place-name">The Ridge</div>
+    </div>
+
+    <div class="place-card">
+        <img src="kufri.jpg" alt="Kufri">
+        <div class="place-name">Kufri</div>
+    </div>
+
+    <div class="place-card">
+        <img src="jakhu.jpg" alt="Jakhu Temple">
+        <div class="place-name">Jakhu Temple</div>
+    </div>
+
+    <div class="place-card">
+        <img src="mall.jpg" alt="Mall Road">
+        <div class="place-name">Mall Road</div>
+    </div>
+
+    <div class="place-card">
+        <img src="mashobra.jpg" alt="Mashobra">
+        <div class="place-name">Mashobra</div>
+    </div>
+
+    <div class="place-card">
+        <img src="green.jpg" alt="Green Valley">
+        <div class="place-name">Green Valley</div>
+    </div>
+
+    <div class="place-card">
+        <img src="chadwick.jpg" alt="Chadwick Falls">
+        <div class="place-name">Chadwick Falls</div>
+    </div>
+
+
+    <div class="place-card">
+        <img src="advancestudy.jpg" alt="Advance Study">
+        <div class="place-name">Advance Study</div>
+    </div>
+ 
+
+    <div class="place-card">
+        <img src="taradevi.jpg" alt="Tara Devi Temple">
+        <div class="place-name">Tara Devi Temple</div>
+    </div>
+
+
+    <div class="place-card">
+        <img src="armyheritage.jpg" alt="Army Heritage Museum">
+        <div class="place-name">Army Heritage Museum</div>
+    </div>
+
+   <div class="place-card">
+        <img src="naldhera.jpg" alt="Naldehra">
+        <div class="place-name">Naldehra</div>
+    </div>
+
+   <div class="place-card">
+        <img src="dingumata.jpg" alt="Dingu Mata Temple">
+        <div class="place-name">Dingu Mata Temple</div>
+    </div>
+
+     <div class="place-card">
+        <img src="sankat.jpg" alt="Sankat Mochan Temple">
+        <div class="place-name">Sankat Mochan Temple</div>
+    </div>
+
+    <div class="place-card">
+        <img src="hatu.jpg" alt="Hatu Peak">
+        <div class="place-name">Hatu Peak</div>
+    </div>
+
+    
+    <div class="place-card">
+        <img src="tatapani.jpg" alt="Tatapani">
+        <div class="place-name">Tatapani</div>
+    </div>
+
+     <div class="place-card">
+        <img src="kalibari.jpg" alt="Kali Bari Temple">
+        <div class="place-name">Kali Bari Temple</div>
+    </div>
+</div>
+
+</body>
+</html>
